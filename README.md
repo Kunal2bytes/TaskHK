@@ -1,12 +1,25 @@
 # React + Vite
+Shopping Website
+A simple e-commerce platform where users and admins can manage products. Admins can add new products to the dashboard, and users can add products to their wishlist or cart, with payment functionality integrated.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+User Dashboard: Once logged in, both new users and admins will be directed to an empty dashboard.
 
-Currently, two official plugins are available:
+Admin Product Management: Admins can add new products via an "Add New Product" button located on the top-right header of the dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Product List: After adding a product, it will appear in the product list. No duplicate products are allowed (based on name and image).
 
-## Expanding the ESLint configuration
+Product View: Users can click on any product in the list to view details, including an image.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Local Storage: Products are saved using local storage to ensure persistence across sessions.
+
+Wishlist and Cart: Users can add products to their wishlist or cart.
+
+Payment: After adding products to the cart, users can proceed with payment.
+
+Technologies Used
+Frontend: HTML, CSS, JavaScript (possibly using a framework like React or Flutter for web)
+
+Backend: (If applicable, mention the technology, e.g., Node.js or Python Flask/Django)
+
+Local Storage: Used to store product data on the user's browser.
